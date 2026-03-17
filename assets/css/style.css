@@ -64,6 +64,7 @@
   border: 2px solid #fff;
   padding: 25px 55px;
   transition: 0.5s ease-in-out;
+  justify-self: start;
 }
 
 .btn:hover {
@@ -157,12 +158,19 @@ body {
   padding: 65px 165px 65px 165px;
 }
 
+.content {
+  display: grid;
+  justify-content: flex-start;
+  /* justify-items: center; */
+}
+
 .header {
   margin-bottom: 153px;
 }
 
 .hero {
   max-width: 508px;
+  display: grid;
 }
 
 .hero__title {
@@ -177,4 +185,57 @@ body {
 .hero__title,
 .hero__text {
   color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 820px) {
+  body {
+    background-image: url(../images/homepage/hero-bg-tablet.jpg);
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+  .content {
+    margin-top: 140px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 100dvh;
+  }
+
+  .btn {
+    justify-self: center;
+    padding: 25px 55px;
+  }
+
+  .header {
+    margin-bottom: 38px;
+  }
+
+  .hero {
+    max-width: 689px;
+  }
+
+  .hero__title {
+    max-width: 298px;
+    justify-self: center;
+    font-size: 3rem;
+    line-height: 1.33;
+    text-align: center;
+  }
+
+  .hero__text {
+    max-width: 600px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    background-image: url(../images/homepage/hero-bg-mobile.jpg);
+  }
 }
