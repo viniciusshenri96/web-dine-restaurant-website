@@ -1,0 +1,180 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  /* Colors */
+  --color-beaver: #9e7f66;
+  --color-CodGray: #111111;
+  --color-mirage: #17192b;
+  --color-EbonyClay: #242b37;
+  --color-ShuttleGray: #5c6779;
+}
+
+/* Typography */
+.fontXL {
+  font:
+    300 5rem/1 "League Spartan",
+    sans-serif;
+  letter-spacing: -1px;
+}
+
+.fontL {
+  font:
+    700 3rem/1 "League Spartan",
+    sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.fontM {
+  font:
+    700 1.25rem/1.2 "League Spartan",
+    sans-serif;
+  letter-spacing: -0.25px;
+}
+
+.fontS {
+  font:
+    600 1.063rem/1.64 "League Spartan",
+    sans-serif;
+  letter-spacing: -0.25px;
+}
+
+.fontBody {
+  font:
+    400 1.25rem/1.5 "League Spartan",
+    sans-serif;
+}
+
+.fontBodyTwo {
+  font:
+    400 1rem/1.625 "League Spartan",
+    sans-serif;
+}
+
+/* COMPONENT BUTTON */
+.btn {
+  display: inline-block;
+  font:
+    600 1.063/0.94 "League Spartan",
+    sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  border: 2px solid #fff;
+  padding: 25px 55px;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--color-CodGray);
+}
+
+/* CSS RESET */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-image: url(../images/homepage/hero-bg-desktop@2x.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 65px 165px 65px 165px;
+}
+
+.header {
+  margin-bottom: 153px;
+}
+
+.hero {
+  max-width: 508px;
+}
+
+.hero__title {
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  margin-bottom: 40px;
+  max-width: 27.813rem;
+}
+
+.hero__title,
+.hero__text {
+  color: #fff;
+}
