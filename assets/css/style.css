@@ -102,6 +102,12 @@ svg {
   max-width: 100%;
 }
 
+img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 /* 7. Inherit fonts for form controls */
 input,
 button,
@@ -147,10 +153,13 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+
   background-image: url(../images/homepage/hero-bg-desktop@2x.jpg);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:
+    100% 820px,
+    cover;
 }
 
 .container {
@@ -161,6 +170,7 @@ body {
 .content {
   display: grid;
   justify-content: flex-start;
+
   /* justify-items: center; */
 }
 
@@ -185,6 +195,65 @@ body {
 .hero__title,
 .hero__text {
   color: #fff;
+}
+
+/* PLACE */
+.place {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 7.813rem;
+}
+
+.place__img {
+  position: relative;
+  z-index: 999;
+}
+
+.place__img::before {
+  content: "";
+  display: block;
+  width: 55.938rem;
+  height: 20rem;
+  border-top-right-radius: 100px;
+  background-color: var(--color-ShuttleGray);
+  position: absolute;
+  left: -165px;
+  bottom: 80px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.place__content {
+  color: var(--color-EbonyClay);
+}
+
+.place__title {
+  margin-bottom: 37px;
+  position: relative;
+  display: flex;
+  z-index: 999;
+}
+
+.place__title::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #9e7f66;
+  border-radius: 100%;
+  position: absolute;
+  top: -55px;
+}
+
+.place__title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  border: 1px solid #9e7f66;
+  position: absolute;
+  top: -53px;
+  left: 16px;
 }
 
 /* RESPONSIVE */
