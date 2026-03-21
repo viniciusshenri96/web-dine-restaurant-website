@@ -25,18 +25,36 @@
     </main>
   </div>
 
-  <main>
+  <main class="grid">
     <section class="place container">
       <div class="place__img">
-        <img src="assets/images/homepage/enjoyable-place-desktop.jpg" alt="">
+        <picture>
+          <source srcset="assets/images/homepage/enjoyable-place-mobile.jpg" media="(max-width: 650px)" />
+          <source srcset="assets/images/homepage/enjoyable-place-tablet.jpg" media="(max-width: 1200px)" />
+          <img src="assets/images/homepage/enjoyable-place-desktop.jpg" alt="">
+        </picture>
       </div>
       <div class="place__content">
         <h2 class="place__title fontL">Enjoyable place for all the family</h2>
         <p class="place__text fontBody">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
-
       </div>
     </section>
 
+    <section class="locally">
+      <div class="locally__container">
+        <div class="locally__content">
+          <h2 class="locally__title fontL">The most locally sourced food</h2>
+          <p class="locally__text fontBody">All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p>
+        </div>
+        <div class="locally__img">
+          <picture>
+            <source srcset="assets/images/homepage/locally-sourced-mobile.jpg" media="(max-width: 650px)" />
+            <source srcset="assets/images/homepage/locally-sourced-tablet.jpg" media="(max-width: 1200px)" />
+            <img src="assets/images/homepage/locally-sourced-desktop.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Exquisite dining since 1989
